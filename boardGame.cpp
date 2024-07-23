@@ -24,6 +24,8 @@ bool bfs(int srcX, int srcY, string target, int targetWordSize, vector<vector<ch
     if(currentTarget == targetWordSize){
       cout << "Word found! -> ";
       cout << target << endl;
+
+      //clearing the visited array input
       vis[srcX][srcY] = 0;
       for(auto e:tempVis){
       vis[e.first][e.second] = 0;
